@@ -1,21 +1,33 @@
 // Task 3
-var headerTitle = document.getElementById('header-title');
-headerTitle.style.borderBottom = 'solid 3px #000';
-var header = document.getElementById('main-header');
-header.style.borderBottom = 'solid 4px #000';
-var items = document.getElementsByClassName('list-group-item');
-items[0].textContent = 'Pons';
-items[0].style.fontWeight = 'bold';
-items[0].style.color = 'green';
+// var headerTitle = document.getElementById('header-title');
+// headerTitle.style.borderBottom = 'solid 3px #000';
+// var header = document.getElementById('main-header');
+// header.style.borderBottom = 'solid 4px #000';
+// var items = document.getElementsByClassName('list-group-item');
+// items[0].textContent = 'Pons';
+// items[0].style.fontWeight = 'bold';
+// items[0].style.color = 'green';
 
 //Task 4
-items[2].style.backgroundColor = 'green';
-for (i = 0; i < items.length; i++) {
-    items[i].style.fontWeight = 'bold';
-}
+// items[2].style.backgroundColor = 'green';
+// for (i = 0; i < items.length; i++) {
+//     items[i].style.fontWeight = 'bold';
+// }
 
 //Task 5
-var li = document.getElementsByTagName('li');
-li[4].textContent = 'Hello';
-li[4].style.fontWeight = 'bold';
-li[4].style.color = 'red';
+// var li = document.getElementsByTagName('li');
+// li[4].textContent = 'Hello';
+// li[4].style.fontWeight = 'bold';
+// li[4].style.color = 'red';
+
+
+//Task 6 - QuerySelector
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.visibility = 'hidden';
+
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// for (i = 0; i < odd.length; i++) {
+//     odd[i].style.backgroundColor = 'green';
+// }
