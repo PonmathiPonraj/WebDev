@@ -1,0 +1,9 @@
+document.title = "Pons";
+var headerTitle = document.getElementById('header-title');
+headerTitle.style.borderBottom = 'solid 3px #000';
+var header = document.getElementById('main-header');
+header.style.borderBottom = 'solid 4px #000';
+var items = document.getElementsByClassName('list-group-item');
+items[0].textContent = 'Pons';
+items[0].style.fontWeight = 'bold';
+items[0].style.color = 'green';
