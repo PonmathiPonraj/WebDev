@@ -21,13 +21,10 @@
 // li[4].style.color = 'red';
 
 
-//Task 6 - QuerySelector
-var secondItem = document.querySelector('.list-group-item:nth-child(2)');
-secondItem.style.backgroundColor = 'green';
-var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
-thirdItem.style.visibility = 'hidden';
-
-// var odd = document.querySelectorAll('li:nth-child(odd)');
-// for (i = 0; i < odd.length; i++) {
-//     odd[i].style.backgroundColor = 'green';
-// }
+//Task 6 - QuerySelectorAll
+var list = document.querySelectorAll('.list-group-item');
+list[1].style.color = 'green';
+var odd = document.querySelectorAll('li:nth-child(odd)');
+for (i = 0; i < odd.length; i++) {
+    odd[i].style.backgroundColor = 'green';
+}
